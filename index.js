@@ -9,7 +9,7 @@ const body = document.querySelector('body');
 const userAvatar = document.querySelector("#user-image");
 const userFullName = document.querySelector("#user-full-name");
 const gitHubUserName = document.querySelector("#username");
-const joiningDate = document.querySelector("#joined");
+const visitProfile = document.querySelector("#visit");
 const bio = document.querySelector("#bio");
 const repoCount = document.querySelector("#repo-count");
 const followers = document.querySelector("#followers");
@@ -23,7 +23,8 @@ const updateInfo = (data) => {
   userAvatar.src = `${data.avatar_url}`;
   userFullName.innerText = `${data.name}`;
   gitHubUserName.innerText = `@${data.login}`;
-  joiningDate.innerText = `${data.created_at}`;
+  visitProfile.href = `${data.html_url}`;
+  console.log(visitProfile.href)
   bio.innerText = `${data.bio}`;
   repoCount.innerText = `${data.public_repos}`;
   followers.innerText = `${data.followers}`;
@@ -32,6 +33,7 @@ const updateInfo = (data) => {
   website.innerText = `${data.company}`;
   twitter.innerText = `@${data.twitter_username}`;
   company.innerText = `${data.company}`;
+  console.log(visitProfile)
 };
 
 

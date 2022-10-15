@@ -51,12 +51,12 @@ body {
   font-size: 3.2rem;
   
 }
-.theme{
+/* .theme{
   /* display: flex;
   align-items: center;
   background-color: red;
   position: relative; */
-}
+/* } */
 .son-icon{
   width: 3.5rem;
 }
@@ -150,6 +150,11 @@ input[type="search"]:focus {
   color: var(--light-blue);
   font-weight: 600;
 }
+.profile-link a{
+  text-decoration: none;
+  color: var(--light-blue);
+  font-weight: 800;
+}
 .additional-info {
   margin-top: 0.5rem;
   margin-left: 12.5rem;
@@ -219,10 +224,11 @@ input[type="search"]:focus {
     font-size: 1.8rem;
     margin-left: 0.8rem;
   }
-  #joined {
+  .profile-link {
     line-height: 3rem;
     font-size: 1.3rem;
   }
+
 }
 
 @media (max-width: 400px) {
