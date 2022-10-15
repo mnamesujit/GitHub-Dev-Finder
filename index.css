@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Space Mono", monospace;
-
 }
 :root {
   --white-color: #fff;
@@ -29,7 +28,7 @@ body {
 }
 
 .main-container {
-  width: 900px;
+  width: 60%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -46,8 +45,8 @@ body {
 .nav .logo {
   font-size: 3.2rem;
 }
-p{
-    font-size: 1.7rem;
+p {
+  font-size: 1.7rem;
 }
 #btn-mode {
   width: 80px;
@@ -77,7 +76,7 @@ p{
   height: 25px;
 }
 
-.input{
+.input {
   display: flex;
   align-items: center;
   width: 80%;
@@ -110,33 +109,33 @@ input[type="search"]:focus {
   background-color: var(--light-gray);
   color: var(--white-color);
 }
-.profile-info{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
 }
 
-.profile-img img{
-    width: 100px;
-    border-radius: 50%;
+.profile-img img {
+  width: 100px;
+  border-radius: 50%;
 }
-.profile-text{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 2.5rem 12rem 2.5rem 2.5rem ;
-    font-size: 1.5rem;
-    flex-wrap: wrap;
+.profile-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 12rem 2.5rem 2.5rem;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
 }
 
-#username{
-    color: var(--light-blue);
-    font-weight: 600;
+#username {
+  color: var(--light-blue);
+  font-weight: 600;
 }
-.additional-info{
-    margin-top: .5rem;
-    margin-left: 12.5rem;
+.additional-info {
+  margin-top: 0.5rem;
+  margin-left: 12.5rem;
 }
 .repo-info {
   display: flex;
@@ -149,7 +148,7 @@ input[type="search"]:focus {
   color: rgb(6, 197, 6);
   margin: 3rem 0;
 }
-.repo-info .txt{
+.repo-info .txt {
   font-weight: 800;
 }
 
@@ -163,61 +162,58 @@ input[type="search"]:focus {
   display: flex;
   gap: 15px;
   width: 50%;
-
-
 }
-.social-info img{
-     filter: brightness(0) invert(.8);
+.social-info img {
+  filter: brightness(0) invert(0.8);
 }
-.align-icons{
-    display: flex;
-    align-items: center;
+.align-icons {
+  display: flex;
+  align-items: center;
 }
-
 
 @media (max-width: 992px) {
   .main-container {
     width: 80%;
   }
-  .profile-text{
-      padding: 2.5rem 8rem 2.5rem 2.5rem ;
+  .profile-text {
+    padding: 2.5rem 8rem 2.5rem 2.5rem;
   }
-  .social{
-      flex-direction: column;
-    }
-
+  .social {
+    flex-direction: column;
+  }
 }
 
-@media(max-width:680px){
-    .main-container {
-    max-width: 85%;
+@media (max-width: 680px) {
+  .main-container {
+    width: 90%;
   }
-  .nav{
-    margin-top: 15rem;
+  .nav {
+    margin-top: 10rem;
   }
-    .additional-info{
-      margin-left: 0rem;
+  .additional-info {
+    margin-left: 0rem;
   }
-  .profile-text{
-      font-size: 1.4rem;
-      margin-left: 1.5rem;
-      padding: 0px;
-    }
-    input[type="search"] {
-    font-size: 2rem;
-    margin-left: .8rem;
-    }
-    #joined{
-      line-height: 3rem;
+  .user-data {
+    padding: 1.5rem;
+  }
+  .profile-text {
+    font-size: 1.4rem;
+    margin-left: 1.5rem;
+    padding: 0px;
+  }
+  input[type="search"] {
+    font-size: 1.8rem;
+    margin-left: 0.8rem;
+  }
+  #joined {
+    line-height: 3rem;
     font-size: 1.3rem;
   }
-    
- 
 }
 
 @media (max-width: 400px) {
   .main-container {
-    max-width: 90%;
+    width: 95%;
   }
   .user-data {
     display: block;
@@ -225,38 +221,37 @@ input[type="search"]:focus {
   .input-username {
     padding: 3rem 1.5rem;
     margin-top: 3rem;
-    }
-    .search-icon {
+  }
+  .search-icon {
     height: 20px;
-    }
+  }
 
   input[type="search"] {
-    font-size: 2rem;
-    margin-left: .8rem;
-    }
+    font-size: 1.6rem;
+    margin-left: 0.8rem;
+  }
   .nav .logo {
     font-size: 2.5rem;
-    }
-    .profile-img img{
-        width: 60px;
-        
-    }
-    .profile-text{
-        font-size: 1.2rem;
-        /* background-color: red; */
-        margin-left: 1.5rem;
-        padding: 0px;
-        /* justify-content: center; */
-    }
-   #search-btn {
+  }
+  .profile-img img {
+    width: 60px;
+  }
+  .profile-text {
+    font-size: 1.2rem;
+    /* background-color: red; */
+    margin-left: 1.5rem;
+    padding: 0px;
+    /* justify-content: center; */
+  }
+  #search-btn {
     padding: 7px 15px;
     font-size: 1.5rem;
-    }
-    .repo-info p{
-        font-size: 1.4rem;
-    }
-    .social-info{
-      width: 100%;
-      margin-left: 1.5rem;
-    }
+  }
+  .repo-info p {
+    font-size: 1.4rem;
+  }
+  .social-info {
+    width: 100%;
+    margin-left: 1.5rem;
+  }
 }
