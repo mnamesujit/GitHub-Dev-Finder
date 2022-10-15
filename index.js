@@ -2,6 +2,10 @@ console.log("Hello Zanta");
 const URL = "https://api.github.com/users";
 const btn = document.querySelector("#search-btn");
 
+const themeMode = document.querySelector("#btn-mode");
+const body = document.querySelector('body');
+
+
 const userAvatar = document.querySelector("#user-image");
 const userFullName = document.querySelector("#user-full-name");
 const gitHubUserName = document.querySelector("#username");
@@ -29,6 +33,7 @@ const updateInfo = (data) => {
   twitter.innerText = `@${data.twitter_username}`;
   company.innerText = `${data.company}`;
 };
+
 
 btn.addEventListener("click", (e) => {
   console.log("you clicked");
