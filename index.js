@@ -30,7 +30,7 @@ const updateInfo = (data) => {
   followers.innerText = `${data.followers}`;
   following.innerText = `${data.following}`;
   userLocation.innerText = `${data.location}`;
-  website.innerText = `${data.company}`;
+  website.innerText = `${data.blog}`;
   twitter.innerText = `@${data.twitter_username}`;
   company.innerText = `${data.company}`;
   console.log(visitProfile)
