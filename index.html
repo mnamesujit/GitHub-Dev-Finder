@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Dev Finder</title>
+    <link rel="icon" type="image/png" href="git_logo.jpg"/>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer ></script>
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="navigation">
+        <header class="nav">
+          <h1 class="logo">devfinder</h1>
+          <div id="btn-mode">
+            <p id="mode-text">DARK</p>
+            <div class="icon-container">
+              <img id="mode-icon" src="./icons/icon-moon.svg" alt="" />
+            </div>
+          </div>
+        </header>
+      </section>
+      <article id="card">
+        <div class="input-username">
+          <div class="input">
+            <img src="./icons/icon-search.svg" alt="" class="search-icon" />
+            <input
+              id="user-input"
+              type="search"
+              name="user-name"
+              id="user-name"
+              placeholder="Github Username..."
+            />
+          </div>
+          <button id="search-btn">Search</button>
+        </div>
+
+        <div class="user-data">
+            <div class="profile-info">
+              <div class="profile-img">
+                <img src="./gituser.png" alt="" id="user-image">
+              </div>
+              <div class="profile-text">
+                <div class="full-name">
+                  <h1 id="user-full-name">James Bond</h1>
+                  <p id="username">@username</p>
+                </div>
+                <div class="joining-date">
+                  <p id="joined">Joined 25 Jan 2021</p>
+                </div>
+              </div>
+            </div>
+          <div class="additional-info">
+              <div class="bio">
+                <p id="bio">This User Has No Bio</p>
+              </div>
+          <!-- Repo Info -->
+              <div class="repo-info">
+                  <div class="repos">
+                      <p class="repository">Repos</p>
+                      <p id="repo-count" class="txt">10</p>
+                  </div>
+                  <div class="followers">
+                      <p class="followers">Followers</p>
+                      <p id="followers" class="txt">1010</p>
+                  </div>
+                  <div class="following">
+                      <p class="following">Following</p>
+                      <p id="following" class="txt">10</p>
+                  </div>
+              </div>
+              <!-- Social Info -->
+              <div class="social">
+                <div class="social-info">
+                  <div class="location align-icons"><img src="./icons/icon-location.svg" alt=""></div>
+                  <p id="location">Kanpur</p>
+                </div>
+                <div class="social-info">
+                  <div class=" website align-icons"><img src="./icons/icon-website.svg" alt=""></div>
+                  <p id="website">Website</p>
+                </div>
+                <div class="social-info">
+                  <div class="twitter-icons align-icons"><img src="./icons/icon-twitter.svg" alt=""></div>
+                  <p id="twitter">Twitter</p>
+                </div>
+                <div class="social-info">
+                  <div class="company-icons align-icons"><img src="./icons/icon-company.svg" alt=""></div>
+                  <p id="company">Company</p>
+                </div>
+              </div>
+           </div>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
