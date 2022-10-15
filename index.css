@@ -20,7 +20,7 @@ html {
 body {
   background-color: #141d2f;
   max-width: 1440px;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
